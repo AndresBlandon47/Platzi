@@ -1,0 +1,8 @@
+Si la primera mejor amiga del programador es la línea de comandos, es momento de instalar y configurar el segundo mejor amigo del programador: el editor de código.
+
+Existen multiples editores de código, para la escuela de JavaScript vamos a utilizar Visual Studio Code. Vamos a añadir diferentes plugins para VSCode:
+
+Git Blame: va a mostrar el autor de la línea de código en la que estemos trabajando.
+ESLint: es una herramienta de análisis de código estático para identificar patrones problemáticos encontrados en el código JavaScript, o sea, nuestro linter. Debemos instalar y configurar eslint para que siga el estilo de código que le indiquemos.
+Color Highlight: resalta el color que estemos escribiendo.
+SASS: es un preprocesador de CSS.

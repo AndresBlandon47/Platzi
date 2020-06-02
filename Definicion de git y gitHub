@@ -1,0 +1,9 @@
+Git es un sistema de control de versiones que nos permite llevar un histórico sobre los cambios de 
+nuestro proyecto, no es el único sistema de control de versiones, pero sí el más usado. Fue creado
+por Linus Torvalds. Git y GitHub no son lo mismo, uno es el sistema de control de versiones y el 
+otro es la red social de programadores.
+
+Los repositorios son una estructura de datos que almacenan información sobre archivos y directorios. 
+Es el inicio de todo proyecto con Git, dentro de un repositorio encontraremos ramas, no son más que 
+la duplicación de un objeto bajo un repositorio, permite trabajar en paralelo para al final unir 
+los cambios.
