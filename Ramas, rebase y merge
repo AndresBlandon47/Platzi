@@ -3,3 +3,5 @@ Recuerda que una rama es la duplicación de un objeto sobre el repositorio y nos
     git checkout -b develop: según el commit en el cual ejecutemos este comando va a ser el punto en el cual se va a crear una rama idéntica, en este caso con el nombre de “develop”.
     git merge develop: va a añadir los commits a la rama master y desparece develop.
     git rebase develop: va a añadir los commits a la rama master unificando ambas ramas y conservando la historia de la misma.
+
+linea 1 master
