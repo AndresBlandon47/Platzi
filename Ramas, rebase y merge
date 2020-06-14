@@ -5,3 +5,5 @@ Recuerda que una rama es la duplicación de un objeto sobre el repositorio y nos
     git rebase develop: va a añadir los commits a la rama master unificando ambas ramas y conservando la historia de la misma.
 
 linea 1 master
+
+liena 2 master
