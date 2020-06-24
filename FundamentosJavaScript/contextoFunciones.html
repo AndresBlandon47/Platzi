@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contexto de funciones</title>
+</head>
+<body>
+    <script>
+
+        /*
+        El contexto (o alcance) de una función es por lo general, window. 
+        Así que en ciertos casos, cuando intentamos referirnos a this en 
+        alguna parte del código, es posible que tengamos un comportamiento 
+        inesperado, porque el contexto quizás no sea el que esperamos.
+
+        Existen al menos tres maneras de cambiar el contexto de una función.
+        */
+        const andres = {
+            nombre: 'Andres',
+            apellido: 'Blandon',
+            edad: 23
+        }
+
+        const juliana = {
+            nombre: 'Juliana',
+            apellido: 'Montes',
+            edad: 22
+        }
+
+        const magna = {
+            nombre: 'Magnamara',
+            apellido: 'Blandon',
+            edad: 22
+        }
+
+        function saludar(){
+            console.log(`Hola, mi nombre es ${this.nombre}`)
+        }
+        
+        function saludarBien(saludo = 'Hola'){
+            console.log(`${saludo}, mi nombre es ${this.nombre}`)
+        }
+
+        /*Usando el método .bind, enviamos la referencia a la función sin ejecutarla, 
+        pasando el contexto como parámetro. 
+        Con el bind la función no se ejecuta, simplemente le asigna el contexto
+        */
+
+        const saludarAndres = saludar.bind(andres)
+        const saludarJuliana = saludar.bind(juliana)
+
+        console.log(saludarAndres())
+        console.log(saludarJuliana())
+
+        //pero si esta dentro de un setTimeout si se puede llamar normal con el bind y se ejecutara
+        setTimeout(saludar.bind(magna),1000)
+
+        //Cuando es una funcion con parametros, el bind se usa normal, pero cuando se llama la función se pasa el parametro
+        const saludarBienAndres = saludarBien.bind(andres)
+        console.log(saludarBienAndres('Que dice la Neaa'))
+
+        //Y con setTimeout, el parametro se pasa despues del objeto que va a ser el this
+        setTimeout(saludarBien.bind(juliana,'Amor'),2000)
+
+        /*Usando el método .call, ejecutamos inmediatamente la función con el contexto indicado.
+        Se utiliza similar a bind 
+        */
+        console.log('EMPIEZA CALL')
+        saludar.call(andres)
+        saludarBien.call(juliana,'Amor')
+
+        setTimeout(saludarBien.call(magna,'bebe'),3000)//No son afectadas por el tiempo, se ejecutan de una
+
+        /*Usando el método .apply, es similar a .call pero los parámetros adicionales se 
+        pasan como un arreglo de valores
+        */
+        console.log('Empiza Aply')
+        saludar.apply(andres)
+        saludarBien.apply(juliana,['Mi amor'])
+        setTimeout(saludarBien.call(magna,['Bebecitaaa']),4000) //No son afectadas por el tiempo, se ejecutan de una
+
+    </script>
+</body>
+</html>

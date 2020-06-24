@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DATOSINMUTABLES</title>
+</head>
+<body>
+    <script>
+
+        /*Las estructuras de datos inmutables forman parte de los principios 
+        de la Programación Funcional y nos permiten evitar tener efectos colaterales 
+        en los datos. En otras palabras, que hayan modificaciones en las variables
+        sin nuestro consentimiento, produciendo comportamientos inesperados en el programa.        
+        
+        Se puede observar que si se utiliza la funcion normal de cumpleaños, la 
+        variable edad se afecta en la constante andres (a pesar de que es una const)
+        por lo tanto es importante mirar cuando queremos que estos datos no se modifiquen
+        
+        */
+        const andres = {
+            nombre: 'Andres',
+            Felipe: 'Blandon',
+            edad: 23
+        }
+
+        const cumpleanos = persona => persona.edad++
+
+        const cumpleanosInmutabe = persona => ({
+            ...persona,
+            edad: persona.edad + 1
+        })
+    </script>
+</body>
+</html>

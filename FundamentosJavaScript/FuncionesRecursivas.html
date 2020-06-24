@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Funciones Recursivas</title>
+
+</head>
+<body>
+    <script>
+        /*
+        13 / 4
+        13 - 4 = 9          1
+        9  - 4 = 5          1
+        5  - 4 = 1          1
+        1  - 4 =-3          0
+
+        En este caso el resultado es 3, por la suma de los palitos que aparecen a la derecha
+        El caso base ocurre cuando dividendo es menor que el divisor
+
+        */
+
+        function divisionEntera(dividendo, divisor){
+            if(dividendo < divisor){
+                return 0
+            }
+
+            return 1 + divisionEntera(dividendo - divisor,divisor) 
+        }
+    </script>
+</body>
+</html>
