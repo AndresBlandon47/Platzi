@@ -9,7 +9,9 @@ Todos los cursos que he hecho
 ###### Encabezado nivel 6
 
 **Esto es una negrita**
+
 *Esto es una itálica*
+
 **_Esto es una negrita con itálica_**
 
 > Esto es una cita
@@ -27,3 +29,5 @@ Cómo usar: describe rápidamente casos de uso en los cuales se puede usar el pr
 Cómo contribuir: si es un proyecto open source se describe acá la forma en la que deberían crearse las contribuciones.
 
 Licencia: muestra la licencia que tiene el proyecto.
+
+`` console.log('Hola Mundo') ``
