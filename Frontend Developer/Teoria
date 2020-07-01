@@ -1,0 +1,25 @@
+HTPP: El protocolo de transferencia de Hipertexto, es el protocolo de comunicación que permite las transferencias de información en la world wide web.
+
+URL: Localizador de recursos uniformes , es la manera en la que agregamos un nombre a un punto de la red.
+
+HTML: Es un lenguaje de marcado usado para decirle a tu navegador cómo estructurar las páginas web que visitas. No es un lenguaje de programación.
+
+CSS: Es un lenguaje que nos permite crear páginas web con un diseño agradable para los usuarios. Tampoco es un lenguaje de programación.
+
+DOM: Document object Model, es una transformación del código HTML del programador, a objetos que son entendibles por el navegador.
+ 
+CSSOM: Es una representación de objetos del CSS, coge los elementos del CSS y los transforma en objetos.
+
+Render Tree: es la unión entre el DOM y el CSSOM para renderizar todo el código de nuestra página web.
+
+BODY: es donde se copia el código que se va ver en el navegador.
+ 
+El proceso que hace el navegador a nivel bajo, es el siguiente:
+BYTES -> CHARACTERS -> TOKENS -> NODES -> DOM
+
+Pasos que sigue el navegador para construir las páginas web:
+    1.Procesa el HTML para construir el DOM.
+    2.Procesa el CSS para construir el CSSOM.
+    3.El DOM se une con el CSSOM para crear el Render Tree.
+    4.Se aplican los estilos CSS en el Render Tree.
+    5.Se ““pintan”” los nodos en la pantalla para que los usuarios vean el contenido de la página web.
