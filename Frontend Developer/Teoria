@@ -23,3 +23,108 @@ Pasos que sigue el navegador para construir las páginas web:
     3.El DOM se une con el CSSOM para crear el Render Tree.
     4.Se aplican los estilos CSS en el Render Tree.
     5.Se ““pintan”” los nodos en la pantalla para que los usuarios vean el contenido de la página web.
+
+
+Selectores del CSS:
+    Universal <-------- *{
+                            margin: 0;
+                         }
+
+    Tipo <------------- h1{
+                            color: red;
+                        }
+
+    Clase <------------ .saludo{
+                            font-size: 2em;
+                        }
+
+    ID <--------------- #id{
+                            border-radius:20px;
+                        }     
+
+Modelo de caja, y que propiedades afectan su dimensionamiento:
+
+    _____________________________________________________________
+   |   Margin_________________________________________________   |
+   |  |   Border___________________________________________   |  |
+   |  |  |                                                 |  |  |
+   |  |  |   Padding____________________________________   |  |  |
+   |  |  |  |___________________________________________|  |  |  |
+   |  |  |                                                 |  |  |
+   |  |  |_________________________________________________|  |  |
+   |  |_______________________________________________________|  |
+   |_____________________________________________________________|
+
+Posicionamiento de los elementos
+    -Absoluto.
+    -Relativo.
+    -Flexbox.
+    -CSS Grid.
+
+Funciones etiquetas
+
+    <head>: Siempre vamos a encontrar los metadatos del documento que vamos a escribir, incluyendo también enlaces.
+
+    <meta>: Define los metadatos que no pueden ser definidos usando otro elemento HTML, como por ejemplo el tipo de codificación: UTF-8.
+
+    <body>: Es la única etiqueta body que debe aparecer en nuestro documento y representa todo el contenido principal.
+
+    <img>: La utilizamos para añadir imágenes. Normalmente debe ir acompañada de los atributos src (donde se coloca la url o enlace en donde se encuentra nuestra imagen) y alt (por si la imagen no carga, el usuario pueda leer el nombre de lo que se iba a ver. Tambien sirve para las personas ciegas).
+
+    <input>: Es un campo en donde el usuario puede ingresar datos. es usada normalmente en formularios como el de inicio de sesión, registro o el buscador de una aplicación.
+
+    <br>: Con esta etiqueta puedes hacer saltos de línea.
+
+    <hr>: Es muy parecido a <br> pero en este caso representa un quiebre temático entre los párrafos de una sección.
+
+    <header>: Se usa para definir la cabecera de nuestra página en donde usualmente le colocamos un logo, el título de la página o aplicación y a veces en menú con una lista de navegación.
+
+    <nav>: Esta es la etiqueta que usamos para colocar enlaces de navegación.
+
+    <article>: La usamos normalmente para definir contenido que puede vivir independiente al resto del contenido.
+
+    <section>: Colocamos el contenido de las secciones de nuestra página.
+
+    <aside>: El contenido de esta etiqueta no le agrega sentido al resto del contenido de la página, es decir, si se elimina, no afecta. Como por ejemplo la publicidad de nuestro sitio.
+
+    <footer>: Es la parte final de nuestra página en donde normalmente se coloca información que el usuario pueda requerir de nuestro sitio, como por ejemplo, nuestras redes sociales, información de contacto, políticas de privacidad y entre otras.
+
+    <div>: Es el contenedor más común y más usado en HTML pero no tiene un significado especial.
+
+    <button>: Es utilizado para hacer botones. Normalmente va acompañado del evento onClick y de un script que define la acción que se realizará al dar click en el botón.
+
+    <a>: Se utiliza para colocar enlaces. Se acompaña del atributo href en donde se coloca la dirección a la cual queremos dirigir.
+
+    <ol>: Describe una lista ordenada. Los ítems se escriben con la etiqueta <li>. por ejemplo:
+        <h1> Equipos de colombia</h1>
+        <ol>
+            <li>Once Caldas</li>
+            <li>Nacional</li>
+            <li>Millos</li>
+            <li>Pasto</li>
+        </ol>
+        veríamos lo siguiente:             
+        Equipos de Colombia:
+            1.Once Caldas
+            2.Nacional
+            3.Millos
+            4.Pasto
+
+    <ul>: Describe una lista desordenada. Los ítems se escriben con la etiqueta <li>. por ejemplo:
+        <h1> Equipos de colombia</h1>
+        <ol>
+            <li>Once Caldas</li>
+            <li>Nacional</li>
+            <li>Millos</li>
+            <li>Pasto</li>
+        </ol>
+        veríamos lo siguiente: 
+        Equipos de Colombia:
+            -Once Caldas
+            -Nacional
+            -Millos
+            -Pasto
+
+    <form>: Usado para crear formularios. Van normalmente acompañados de las etiquetas <input>, <label>, <textarea> y entre otras.
+
+
