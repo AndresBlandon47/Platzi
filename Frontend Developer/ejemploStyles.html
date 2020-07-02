@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    p{
+        font-size: 20px;
+    }
+    p::after{
+        content: '>';
+        color:rebeccapurple;
+    }
+    p:nth-child(2n){
+        color:red;
+    }
+    p:nth-child(2n+1){
+        color:sienna;
+    }
+    p:first-child{
+        color: blue;
+    }
+    p:last-child{
+        color:green;
+    }
+</style>
+<body>
+    <p>️⚽️ Futbol</p>
+    <p>🏀 NBA</p>
+    <p>🚴 Egan</p>
+    <p>🥋 Karate-Do</p>
+    <p>🎲 Poker</p>
+    <p>🎱 Billar</p>
+    <p>🎳 Bolos</p>
+    <p>🥊 Boxeo</p>
+    <p>🏎 Formula 1</p>
+</body>
+</html>

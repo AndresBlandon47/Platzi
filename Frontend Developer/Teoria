@@ -40,7 +40,9 @@ Selectores del CSS:
 
     ID <--------------- #id{
                             border-radius:20px;
-                        }     
+                        }
+                        
+Las Pseudo-clases y Pseudo-elementos nos permiten ser aún más específicos con qué elemento o partes de nuestros elementos deben recibir los estilos.     
 
 Modelo de caja, y que propiedades afectan su dimensionamiento:
 
