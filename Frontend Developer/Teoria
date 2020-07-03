@@ -129,4 +129,24 @@ Funciones etiquetas
 
     <form>: Usado para crear formularios. Van normalmente acompañados de las etiquetas <input>, <label>, <textarea> y entre otras.
 
+Modelo de caja:
+    -Contenido
+    -Padding
+    -Border
+    -Margin 
+
+Displays en CSS: Todos los elementos en CSS son cuadrados o rectángulos y aparte de eso, estos elementos tienen un comportamiento que se define a través de la propiedad display. 
+Los display más comunes y usados son: block, inline, inline-block, none, table, flex y grid. Veamos de qué se tratan:
+
+    Block: Quiero que pensemos en este display como el flujo que tenemos cada vez que escribimos.Por ejemplo, nosotros escribimos de izquierda a derecha, pero cuando se nos acaba 
+    el espacio horizontalmente, seguimos abajo. Este es el flujo de bloque en nuestra escritura (de arriba a abajo) y es exactamente el que obedece display block, lo que quiere 
+    decir que los elementos se visualizan uno debajo del otro. Algunos elementos que por defecto tienen este tipo de display son: <div>,<p>,<h1>, <section> y <ul>.
+
+    Inline: quiero que pensemos en este display como la línea base que seguimos para escribir, que en el caso latín es de izquierda a derecha. Por lo tanto todos los elementos 
+    en este display se visualizará uno al lado del otro de izquierda a derecha. Algunos elementos por defecto tienen este tipo de display son: <span>, <em> y <b>.
+
+    Inline-Block: Este display es muy similar al display inline, sin embargo este respeta el width y el height que se le asigne a los elementos.
+
+    Flex: Para usar felxbox es indispensable la propiedad display: flex en el elemento padre que por defecto alineará los elementos hijos de izquierda a derecha. también, este
+    display suele acompañarce por otras propiedades como justify-content y align-items.
 
