@@ -150,3 +150,59 @@ Los display más comunes y usados son: block, inline, inline-block, none, table,
     Flex: Para usar felxbox es indispensable la propiedad display: flex en el elemento padre que por defecto alineará los elementos hijos de izquierda a derecha. también, este
     display suele acompañarce por otras propiedades como justify-content y align-items.
 
+Propiedades o funciones más comunes de CSS:
+    WIDTH: Define el ancho de un elemento. Por ejemplo: width: 20px;.
+    HEIGHT: Define el alto de un elemento. Por ejemplo: height: 20px;.
+    BACKGROUND: Puede definir el color de fondo o la url de fondo de un elemento. Por ejemplo: background: url('puppy.png')
+    BORDER: Define el tamaño, estilo y color del borde de un elemento. Por ejemplo: border: 2px solid yellow.
+    BORDER-radius: Define qué tan redondeado quiero mi elemento. Por ejemplo: border-radius: 20px.
+    FONT-SIZE: Define el tamaño de la fuente. Por ejemplo: font-size: 20px.
+    FONT-FAMILY: Define la familia tipográfica de la fuente. Por ejemplo: font-family: 'Roboto', sans-serif.
+    OPACITY: Determina la transparencia del elemento. Tiene valores entre 0 y 1, que pueden verse como un porcentaje. Por ejemplo, si quiero que mi elemento se vea con una transparencia del 50%, escribiría: opacity: 0.5.
+    OUTLINE:Un esquema es una línea (por defecto, de color azúl) que se dibuja alrededor de los elementos que hace que “se destaquen”. Lo anterior sucede mucho en elementos como los <input> y los <button>.
+    BOX-SIZING: Cuando trabajamos con paddings, por ejemplo, veremos que el tamaño de nuestro elemento crece. Es decir, si tengo: width: 20px; height: 20 px; Y luego le agrego un padding de 20px, veré en 
+    el navegador que mi div ya no tiene un ancho y un alto de 20px, sino de 40px cada uno. Lo que quiere decir que el padding hizo que creciera mi elemento. Sin embargo, si yo no quiero que el padding 
+    afecte los 20px originales, le agrego la propiedad box-sizing para que el tamaño total del elemento incluya el padding también y no se vea afectado por él.
+
+position en CSS: establece cómo van a estar ubicados nuestros elementos en la pantalla, existen 7 valores diferentes:
+    RELATIVE: El elemento se coloca en relación a su posición normal.
+    ABSOLUTE: Los elementos con esta posición se ubican en relación al elemento relativo más cercano. Aquí podemos hacer uso de las propiedades top, bottom, left y right.
+    FIXED: El elemento se ubica en relación con la ventana del navegador y también se ve afectado por las propiedades top, bottom, left y right.
+    STICKY: El elemento se posiciona en función de la posición de desplazamiento del usuario. Si lo ubicas a la izquierda, siempre va a estar ahí sin importar cuántas veces se haga scroll en la página.
+    STATIC: Los elementos HTML son estáticos por defecto, siguen el flujo normal de la página y no se ven afectados por las propiedades top, bottom, left y right.
+    INITIAL: ubica el elemento en la posición que tiene de forma predeterminada.
+    INHERITAL: Como su nombre lo indica, este valor hereda esta propiedad de su elemento padre.
+
+Arquitectura de CSS:
+    OOCSS: css orientado a objetos. Separa el diseño del contenido, así podemos reutilizar nuestro código
+    // ejemplo, en vez de para cada elemento una clase.
+    .globalWidth {
+        width: 100%;
+    }
+
+    BEM: Block Element Modifier. Separa los elementos y los modificadores
+    .header {}  // bloque
+    .header__button--red {} // block, element, modifier
+    
+    SMACSS: Scalable and Modular Arquitecture for CSS. Arquitectura de css escalable y modular. PAra eso se realizan cinco pasos
+    Dividir nuestro css en componentes base
+    Definir Layout. Elementos que se utilizan solo una vez. ej. Footer, Header
+    Definir Modulos. Componentes que se usan mas de una vez
+    Definir Estados. Estos estados definen los cambios que existen en nuestros elementos/componentes. ej. Cambio de color cuando hacen hover
+    Definir Temas. Separar los temas y sus cambios. Si tuvieras temas
+
+    ITCSS: Inverted Triangle CSS. Triangulo Invertido de CSS. Lo que nos indica esta metodologia es poder dividir todos nuestros archivos de css en ciertas partes para que no se mezclen.
+    Triangulo invertido, desde arriba hacia abajo:
+        Ajustes
+        Herramientas
+        Generico
+        Elementos
+        Objetos
+        Componentes
+        Utilidades
+        
+    Atomic Design: Basados en la quimica.
+        Atomos < Moleculas < Organismos < Templates < Paginas
+    
+    Anotacion: No es tan buena practica usar !important
+
