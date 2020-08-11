@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+    <title>Iniciar Sesión</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        font-family: 'Muli', sans-serif
+    }
+    header{
+        background-color: #dc2f02;
+        width: 100%;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    header img{
+        width: 200px;
+        margin-left: 15px;
+        
+    }
+</style>
+<body>
+    <header>
+        <img src="logo-platzi-video-BW2.png" alt="Logo de platzi">
+    </header>
+    <login>
+        <section class="login__container">
+            <h2>Inicia sesión</h2>
+            <form class="login__container--form">
+                <input type="text" placeholder="Correo">
+                <input type="password" placeholder="Contraseña">
+                <button>Iniciar sesión</button>
+                <div class="login__container--remember">
+                    <label>
+                        <input type="checkbox">Recuérdame
+                    </label>
+                    <a href="/">Olvidé mi contraseña</a>
+                </div>
+            </form>
+            <section class="login__container--social-media">
+                <div><img src="./assets/google_icon.png" alt="Google">Inicia sesión con Google</div>
+                <div><img src="./assets/twitter_icon.png" alt="Twitter">Inicia sesión con twitter</div>
+            </section>
+            <p>No tienes ninguna ceunta <a href="*">Regístrate</a></p>
+
+        </section>
+    </login>
+    <footer>
+        <a href="">Términos de uso</a>
+        <a href="">Declaración de privacidad</a>
+        <a href="">Centro de ayuda</a>
+    </footer>
+</body>
+</html>

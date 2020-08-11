@@ -1,0 +1,105 @@
+body{
+    margin: 0;
+    font-family: 'Muli', sans-serif;
+}
+.login {
+    background:linear-gradient(#dc2f02, #faa307);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 30px;
+    min-height: calc(100vh - 200px);
+}
+.login__container {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid white;
+    border-radius: 45px;
+    color:white;
+    padding: 60px 68px;
+    min-height: 700px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.login__container--form{
+    display: flex;
+    flex-direction: column;
+}
+.login__container--remember {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.login__container--remember label{
+    font-size: 14px;
+}
+.login__container--remember a {
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+}
+.login__container--remember a:hover{
+    text-decoration: underline;
+}
+.login__container--social-media > div {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-top: 10px;
+}
+.login__container--social-media > div > img{
+    width: 35px;
+    height: 35px;
+    padding-right: 10px;
+}
+p{
+    font-size: 14px;
+}
+p a {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+}
+p a:hover {
+    text-decoration: underline;
+}
+.login__container--form > input {
+    background-color: transparent;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 2px solid white;
+    font-size: 16px;
+    font-family: 'Muli', sans-serif;
+    height: 50px;
+    margin-bottom: 20px;
+    color:white;
+    padding: 0px;
+    outline: none;
+}
+::placeholder{
+    color: white;
+}
+.login__container--form button {
+    background-color: rgba(255, 255, 255, 0.1);
+    height: 50px;
+    margin:10px 0px;
+    color:white;
+    border-radius: 45px;
+    border: 1px solid white;
+    font-size: 16px;
+    font-family: 'Muli', sans-serif;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+@media only screen and (max-width: 600px){
+    .login__container{
+        background-color: transparent;
+        border:none;
+        width: 100%;
+        padding: 0px;
+    }
+}
