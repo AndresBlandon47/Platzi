@@ -1,0 +1,71 @@
+npm install --save react react-dom
+
+npm install --save-dev @babel/core @babel/preset-env @babel/preset-react babel-loader
+    Creo el archivo .babelrc
+    {
+        "presets": [
+        "@babel/preset-env",
+        "@babel/preset-react"
+        ]
+    }
+
+npm install webpack webpack-cli html-webpack-plugin html-loader  --save-dev
+npm install --save-dev webpack-dev-server
+npm install --save-dev mini-css-extract-plugin css-loader node-sass sass-loader
+
+    Creo el archivo webpack.config.js
+    const path = require('path');
+    const HtmlWebpackPlugin = require('html-webpack-plugin');
+    const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+
+    module.exports = {
+        entry: './src/index.js',
+        output: {
+            path: path.resolve(__dirname, 'dist'),
+            filename: 'bundle.js',
+        },
+        resolve: {
+            extensions: ['.js', '.jsx'],
+        },
+        module: {
+            rules: [
+            {
+                test: /\.(js|jsx)$/,
+                exclude: /node_modules/,
+                use: {
+                loader: 'babel-loader',
+                },
+            },
+            {
+                test: /\.html$/,
+                use: {
+                loader: 'html-loader',
+                },
+            },
+            {
+                test: /\.(s*)css$/,
+                use: [
+                    { loader: MiniCssExtractPlugin.loader },
+                    'css-loader',
+                    'sass-loader',
+                ],
+            },
+            ],
+        },
+        plugins: [
+            new HtmlWebpackPlugin({
+            template: './public/index.html',
+            filename: './index.html',
+            }),
+            new MiniCssExtractPlugin({
+                filename: 'assets/[name].css',
+            }),
+        ],
+    };
+
+    y en packjason se añade esto:
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server --open --mode development"
+
+npm install --save-dev eslint babel-eslint eslint-config-airbnb eslint-plugin-import eslint-plugin-react eslint-plugin-jsx-a11y
+
