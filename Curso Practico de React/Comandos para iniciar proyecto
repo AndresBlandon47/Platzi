@@ -68,4 +68,6 @@ npm install --save-dev mini-css-extract-plugin css-loader node-sass sass-loader
     "start": "webpack-dev-server --open --mode development"
 
 npm install --save-dev eslint babel-eslint eslint-config-airbnb eslint-plugin-import eslint-plugin-react eslint-plugin-jsx-a11y
+npm install --save prop-types
 
+npm install react-router-dom --save

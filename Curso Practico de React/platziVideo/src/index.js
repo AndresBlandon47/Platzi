@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Prueba from './components/Prueba';
-import './index.scss';
+import App from './containers/App';
 
-ReactDOM.render(<Prueba />, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root'));

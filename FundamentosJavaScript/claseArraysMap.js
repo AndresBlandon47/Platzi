@@ -44,7 +44,10 @@ pasarAlturaCmsV2 = persona => ({
 	altura: persona.altura * 100
 })
 
-var personasCms = personas.map(pasarAlturaCms)
+var personasCms = personas.map(item=>{
+	console.log(item)
+	return true;
+})
 
 var personasCmsV2 = personas.map(pasarAlturaCmsV2)
 
